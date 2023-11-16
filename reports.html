@@ -6,14 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- // fontawesome //
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/flatpickr.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
 
     <style>
         * {
@@ -27,7 +20,6 @@
         @font-face {
             font-family: "project-font";
             src: url("../fonts/URWGeometricArabic-Medium.ttf");
-            /* src: url("../fonts/ArbFONTS-URW-DIN-Arabic.ttf"); */
 
         }
 
@@ -38,9 +30,7 @@
             margin: 0;
             font-family: "project-font";
             font-size: 15px;
-            color: var(--b);
         }
-
 
         :root {
             --main: #91379e;
@@ -61,37 +51,6 @@
             color: var(--main-2) !important;
         }
 
-        .box {
-            border: 1px solid #d9d9d9;
-            border-radius: 10px;
-        }
-
-        .downloadIcon {
-            background-color: #dcdada;
-            padding: 10px;
-            width: 30px;
-            height: 30px;
-            border-radius: 3px;
-            color: #91379e;
-            line-height: 15px;
-
-        }
-
-        #inputText1,
-        #inputText2 {
-
-            border-color: transparent;
-            border-radius: 5px;
-            padding: 4px;
-            margin-inline-start: 10px;
-        }
-
-        #inputText1:focus-visible,
-        #inputText2:focus-visible {
-            outline: 1px solid #91379e;
-            border-radius: 2px;
-        }
-
         .box .underline:not(:last-child) {
             border-bottom: 1px solid #d9d9d9 !important
         }
@@ -103,11 +62,6 @@
             display: inline-block;
             margin-bottom: 10px;
             margin: 0 auto 10px auto;
-        }
-
-
-        .py-5 {
-            padding: 5px 0;
         }
 
         .p-20 {
@@ -123,19 +77,13 @@
             background-color: #f5ecf6;
             padding: 9px 12px;
             border-radius: 5px;
-            color: #91379e
+            color: #91379e;
+
         }
-
-
 
         .gap-5 {
             gap: 5px;
         }
-
-        .f-20 {
-            font-size: 20px;
-        }
-
 
         h1,
         h2,
@@ -145,32 +93,6 @@
         h6 {
             margin: 0;
         }
-
-        .inputText1,
-        .inputText2 {
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .contain-date .inputText1,
-        .contain-date .inputText2 {
-            border-color: transparent;
-
-        }
-
-        .inputText1:focus-visible,
-        .inputText2:focus-visible {
-            outline: unset;
-            border: unset;
-        }
-
-        .destinguished-box {
-            background-color: #f5ecf6;
-            padding: 9px 12px;
-            border-radius: 5px;
-            color: var(--main);
-        }
-
         .s-space {
             margin: 30px;
         }
@@ -181,7 +103,7 @@
         }
 
         .underline {
-            padding: 0 20px;
+            padding: 5px 10px;
         }
 
 
@@ -220,10 +142,6 @@
             max-width: 50px;
         }
     </style>
-
-
-
-
 </head>
 
 <div class="s-space">
@@ -235,45 +153,51 @@
             </div>
             <div class="second">
                 <img src="img/logo.png" alt="" class="logo">
-
             </div>
         </div>
 
         <div class="box p-10" id="target">
             <h5 class="main-color mb-10"> الحضور والغياب </h5>
             <div class="center">
-                <div class="contain-date"><label class="destinguished-box wh-color" for="inputText1">من
-                    </label><input type="text" id="inputText1" placeholder="2023-01-01">
+                <div class="contain-date">
+                    <span class="destinguished-box  wh-color" for="inputText2">الي</span>
+                    <span id="inputText2" placeholder="">
+                        2023-02-02
+                    </span>
                 </div>
-                <div class="contain-date"><label class="destinguished-box  wh-color" for="inputText2">الي
-                    </label><input type="text" id="inputText2" placeholder="2023-02-02"></div>
+                <div class="contain-date">
+                    <span class="destinguished-box  wh-color" for="inputText2">الي</span>
+                    <span id="inputText2" placeholder="">
+                        2023-02-02
+                    </span>
+                </div>
             </div>
             <div>
-                <div class=" underline py-2">
+                <div class=" underline ">
                     <h6 class="text-muted first">14/11/2023</h6>
                     <h6 class="second"><span>حاضر</span><span>/</span><span>ة</span></h6>
                 </div>
                 <!--  -->
 
-                <div class=" underline py-2">
+                <div class=" underline ">
                     <h6 class="text-muted first">14/11/2023</h6>
                     <h6 class="second"><span>حاضر</span><span>/</span><span>ة</span></h6>
                 </div>
 
 
-                <div class=" underline py-2">
+                <div class=" underline ">
                     <h6 class="text-muted first">14/11/2023</h6>
                     <h6 class="second"><span> غائب</span><span>/</span><span>ة</span><span> باذن</span></h6>
                 </div>
 
 
-                <div class=" underline py-2">
+                <div class=" underline ">
                     <h6 class="text-muted first">14/11/2023</h6>
                     <h6 class="second">حاضر / ة</h6>
                 </div>
 
 
-                <div class=" underline py-2">
+                <div class=" underline ">
                     <h6 class="text-muted first">14/11/2023</h6>
                     <h6 class="second"><span> غائب</span><span>/</span><span>ة</span><span> بدون اذن</span></h6>
                 </div>
